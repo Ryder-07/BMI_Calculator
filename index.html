@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="main">
+            <h1>BMI</h1>
+            <p>Body Mass Index <br>calculator</p><br>
+            <p id="result_text">You are <span id="statuses">Normal</span></p>
+            <div class="calculator">
+                <legend>WEIGHT</legend>
+                <input type="number" placeholder="75 Kgs" id="weight">
+                <legend>HEIGHT</legend>
+                <input type="number" placeholder="180 cms" id="height">
+                <legend>RESULT</legend>
+                <div class="bmi" id="result">0<p>BMI</p></div>
+                <div class="output" onclick="check_bmi()" id="check">CHECK</div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
