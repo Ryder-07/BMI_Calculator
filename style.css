@@ -91,12 +91,63 @@
         font-size: 8vmin;
         align-items: first baseline;
     }
-    #statuses{
+    #comp_statuses{
         color: white;
         background-color: #3CB721;
         padding: 4px;
         border-radius: 5px;
     }
-    #result_text{
+    #mob_statuses{
+        color: white;
+        background-color: #3CB721;
+        padding: 4px;
+        border-radius: 5px;
+    }
+    #result_text_comp{
         opacity: 0;
+    }
+    #result_text_mob{
+        opacity: 0;
+    }
+    #mobile_div{
+        display: none;
+        color: black;
+    }
+
+
+    @media screen and (max-width:780px){
+        .screen{
+            flex-direction: column;
+            align-items:center;
+            justify-content: flex-start;
+        }
+        .main{
+            height: 20vmin;
+            width: 100%;
+            border-radius: 0;
+            flex-direction: row;
+            align-items:center;
+            justify-content: flex-start;
+        }
+        .calculator{
+            bottom: 0%;
+            left: 50%;
+            transform: translate(-50%,30%);
+            height: 120vmin;
+            width: 70vmin;
+        }
+        #computer_div{
+            display: none;
+        }
+        #mobile_div{
+            display: block;
+        }
+        input{
+            height: 15vmin;
+            width: 60vmin;
+        }
+        .output{
+            height: 10vmin;
+            width: 60vmin;
+        }
     }
